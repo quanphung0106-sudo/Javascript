@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+        <div class="box_left">
+            <div class="sub-box_left">
+                <form class="content">
+                    <h2>BMI Calculator</h2>
+                   Height (in m): <br> <input class="space" type="text" id="height"><br>
+                   Weight (in kg): <br> <input class="space" type="text" id="weight">
+                   <input onclick="BMICalculate()" type="submit" value="Calculate" style="padding: 7px 5px 7px 5px;">
+                </form>
+            </div>         
+        </div>
+       <div class="box_right">
+        <table style="width: 100%;">
+            <tr>
+                <th>CHỈ SỐ KHỐI CƠ THỂ</th>
+                <th class="mid_th">PHÂN LOẠI</th>
+                <th>NGUY CƠ PHÁT TRIỂN BỆNH</th>
+            </tr>
+            <tr>
+                <td> < 18.5 </td>
+                <td>Gầy</td>
+                <td> Thấp</td>
+            </tr>
+            <tr>
+                <td>18.5 - 24.9</td>
+                <td>Bình thường</td>
+                <td> Trung bình</td>
+            </tr>
+            <tr>
+                <td>25.0 - 29.9</td>
+                <td> Hơi béo</td>
+                <td> Cao </td>
+            </tr>
+            <tr>
+                <td>30.0 - 34.9</td>
+                <td> Béo phì cấp độ 1</td>
+                <td> Cao </td>
+            </tr>
+            <tr>
+                <td>35.0 - 39.9</td>
+                <td> Béo phì cấp độ 2</td>
+                <td> Rất cao </td>
+            </tr>
+            <tr>
+                <td> > 40.0</td>
+                <td> Béo phì cấp độ 3 </td>
+                <td> Nguy hiểm </td>
+            </tr>
+        </table>
+       </div>
+   </div>
+   
+</body>
+<script src="./script.js"> </script>
+</html>
