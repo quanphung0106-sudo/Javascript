@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1_soHoanHao</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </html>
+</head>
+<body>
+    <input type="number" name="" id="number">
+    <button type="button" class="btn btn-success" onclick="Calculate()">Tính</button> <br>
+</body>
+<script>
+    // 1 số hoàn hảo: tổng các ước của nó (trừ chính nó) == nó
+    // 6 = 1 + 2 + 3 =>> 6 là số hoàn hảo; 1,2,3 là ước của 6
+   
+   function Calculate(){
+    var tong = 0
+    var box = document.getElementById("number").value
+    for( var i = 0; i < box; i++){
+        if(box % i == 0){
+            tong += i;
+        }
+    }
+
+    if(tong == box){
+            alert(box + " là số hoàn hảo")
+        } else {
+            alert(box + "  không phải là số hoàn hảo")
+        }
+    }  
+
+   
+</script>
+</html>
