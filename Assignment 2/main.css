@@ -1,0 +1,39 @@
+.background{
+    background-color: #ccc;
+    width: 750px;
+    height: 330px;
+    margin: 0 auto;
+}
+.background .left_box{
+    /* background-color: red; */
+    /* opacity: 60%; */
+    float: left;
+    width: 35%;
+    height: 100%;
+}
+.background .right_box{
+    /* background-color: blue; */
+    /* opacity: 60%; */
+    float: left;
+    width: 65%;
+    height: 100%;
+}
+h3{
+    font-size: 26px;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+.setting_input{
+   font-size: 24px;
+   margin-top: 29px;
+}
+.right_box .diff{
+    padding-left: 70px;
+}
+.accept_button{
+    border-radius: 0.5em;
+    font-size: 26px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: none;
+}
