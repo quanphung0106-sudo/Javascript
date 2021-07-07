@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2_cau17</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    function Calculate(n) {
+        let perfectNum = false;
+        let number = 0;
+        if (n == 1) {
+            perfectNum = false;
+        } else {
+            for (let i = 1; i < n; i++) {
+                if (n % i == 0) {
+                    number = number + i;
+                }
+            }
+        }
+        if (n == number) {
+            perfectNum = true;
+        }
+        return perfectNum;
+    }
+
+    function myArray(n) {
+        var checkNum = 0;
+        var PerfectNumArray = [];
+        for (let i = 1; i <= n; i++) {
+            checkNum = prompt("Nhập vào số phần tử thứ " + i);
+            if (Calculate(checkNum) == true) {
+                PerfectNumArray.push(checkNum);
+            }
+        }
+        document.write(" Những số hoàn hảo là : " + PerfectNumArray);
+    }
+
+    var n = prompt("Nhập vào các phần của mảng : ");
+    myArray(n);
+</script>
+</html>
