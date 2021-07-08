@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1_cau4</title>
+</head>
+<body>
+    
+</body>
+    
+<script>
+
+function inverseNum(so) {
+            if (so.length == 1) {
+                return so;
+            } else {
+                return inverseNum(so.substr(1)) + so.charAt(0);
+            }
+        }
+
+        function CheckNum(n) {
+            let number = false;
+            let tong = 0,
+                firstNum, lastNum, allNum = 0;
+            allNum = n.toString().length;
+
+            if (n > 10) {
+                if (allNum % 2 == 0) {
+                    firstNum = inverseNum((n.substr(0, allNum / 2)).toString());
+                    lastNum = n.substr(allNum / 2, allNum);
+
+                    if (firstNum == lastNum) {
+                        number = true;
+                    }
+                } else {
+                    allNum = allNum - 1;
+                    firstNum = inverseNum((n.substr(0, allNum / 2)).toString());
+                    lastNum = n.substr(allNum / 2 + 1, allNum);
+
+                    if (firstNum == lastNum) {
+                        number = true;
+                    }
+                }
+
+            } else {
+                number = true;
+            }
+            if (number) {
+                document.write(n + " là số đối xứng ");
+            } else {
+                document.write(n + " không phải là số đối xứng ");
+            }
+
+        }
+
+        var n = prompt("Enter a number : ");
+
+        CheckNum(n);
+</script>
+</html>
