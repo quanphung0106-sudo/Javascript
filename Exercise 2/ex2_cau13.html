@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2_cau13</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+function Calculate(n) {
+        let soNguyenTo = true;
+        if (n == 1) {
+            soNguyenTo = false;
+        } else {
+            for (let i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    soNguyenTo = false;
+                }
+            }
+        }
+        return soNguyenTo;
+    }
+
+    function myArray(n) {
+        var checkNum = 0;
+        var PrimeArray = [];
+        for (let i = 1; i <= n; i++) {
+            checkNum = prompt("Nhập vào số phần tử " + i);
+            if (Calculate(checkNum) == true) {
+                PrimeArray.push(checkNum);
+            }
+        }
+        document.write("Các số nguyên tố của mảng A : "+ PrimeArray);
+    }
+
+    var n = prompt("Nhập vào các phần của mảng");
+    myArray(n);
+
+</script>
+</html>

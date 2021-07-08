@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2_Cau9</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    
+    var x = prompt("Hãy nhập phần tử x: ");
+    var n = prompt("Hãy nhập phần tử n: ");
+
+    var total = function(n, x) {
+        var S = 1 + x;
+        for (var i = 1; i <= n; i++) {
+            S += (Math.pow(x, i) / i)
+        }
+        return S;
+    }
+    alert(" đáp án : " + total(n, x));
+
+
+</script>
+
+</html>

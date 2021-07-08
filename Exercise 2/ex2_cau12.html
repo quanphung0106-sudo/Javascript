@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2_cau12</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+var myArray = [3, 7, 10, 23, 76, 4, 6, 100, 15, 99, 14]
+console.log(myArray)
+
+function Calculate() {
+    var newArray = []
+
+    for (var values of myArray) {
+        if (values % 5 == 0) {
+            newArray.push(values)
+        }
+    }
+    return newArray
+
+}
+
+console.log(Calculate(myArray))
+
+
+</script>
+</html>

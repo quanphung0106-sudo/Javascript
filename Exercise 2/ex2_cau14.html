@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2_cau14</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+var fibonacci = (result, len) => {
+    var num1 = result[0],
+        num2 = result[1],
+    next,
+    cnt = 2
+
+    while ( cnt < len) {
+        next = num1 + num2
+        num1 = num2
+        num2 = next
+        result.push(next)
+        cnt++
+    }
+
+    return result
+}
+ 
+var fib2 = (result, len) => {
+    if (result.length >= len) {
+        return result;
+    }
+
+    result.push(result[result.length - 2] + result[result.length - 1])
+    return fib2(result, len)
+}
+
+</script>
+</html>
